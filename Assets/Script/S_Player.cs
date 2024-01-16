@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -43,5 +44,12 @@ public class S_Player : MonoBehaviour
             score += 1;
             Destroy(collision.gameObject);
         }
+
+        
+    }
+
+    public int getScore()
+    {
+        return score;
     }
 }
